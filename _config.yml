@@ -20,6 +20,7 @@
 
 title: Citizenry
 email: hi@andymcmillan.com
+appstoreUrl: https://apps.apple.com/us/app/citizenry-us-citizenship-test/id6451455299
 description: >- # this means to ignore newlines until "baseurl:"
   The app that helps you become a U.S. Citizen
 baseurl: "" # the subpath of your site, e.g. /blog
