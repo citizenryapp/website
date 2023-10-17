@@ -1,11 +1,16 @@
 .banner {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding: 100px 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 100px 15px;
   text-align: center;
   background-color: var(--c-blue);
   color: var(--c-white);
   border-radius: 20px;
+
+  @include media-md {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 
   .btn {
     margin-top: 20px;

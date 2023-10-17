@@ -1,11 +1,15 @@
 .btn {
   display: inline-block;
   background-color: var(--c-red);
-  padding: 16px 36px;
+  padding: 16px 28px;
   font-weight: 600;
   color: var(--c-white);
   border-radius: 100px;
   transition: background var(--transition-default);
+
+  @include media-md {
+    padding: 16px 36px;
+  }
 
   &__icon {
     display: inline-block;
