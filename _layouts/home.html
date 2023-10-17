@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% include head.html %}
+  <title>Citizenry | The app that helps you become a U.S. Citizen</title>
+</head>
+
+<body>
+  {% include site-header.html %}
+  
+  <!-- Hero -->
+
+  <div class="hero container">
+    <h1>Hero Illustration</h1>
+  </div>
+
+  <!-- Tagline -->
+
+  <div class="tagline container">
+    <p class="type-h1">
+      <strong>Citizenry helps you pass the civics test by practicing with realistic mock interviews.</strong> It's like having your very own USCIS agent in your pocket!
+    </p>
+  </div>
+
+  <!-- Features -->
+
+  <div class="two-col container">
+
+    <div class="two-col__col">
+      <div class="feature">
+        <div class="feature__icon">
+          {% include svg-interview.html %}
+        </div>
+        <div class="feature__text">
+          <h2 class="type-h2">Mock interviews</h2>
+          <p class="type-p1">Practice as much as you want with realistic mock interviews hosted by a virtual USCIS agent</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col__col">
+      <div class="feature">
+        <div class="feature__icon">
+          {% include svg-daily-quiz.html %}
+        </div>
+        <div class="feature__text">
+          <h2 class="type-h2">Daily practice quiz</h2>
+          <p class="type-p1">Test your knowledge of the 100 civics questions daily, and share your results with friends</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col__col">
+      <div class="feature">
+        <div class="feature__icon">
+          {% include svg-up-to-date.html %}
+        </div>
+        <div class="feature__text">
+          <h2 class="type-h2">Up-to-date answers</h2>
+          <p class="type-p1">Our test answers are automatically synced to your local and national election results</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col__col">
+      <div class="feature">
+        <div class="feature__icon">
+          {% include svg-languages.html %}
+        </div>
+        <div class="feature__text">
+          <h2 class="type-h2">Supports 85 languages</h2>
+          <p class="type-p1">Switch between English and your native language anywhere in the app</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Banner -->
+
+  <div class="banner container">
+    <h2 class="banner__heading type-h1"><strong>Now available for iOS</strong></h2>
+    <a href="" class="btn --black">
+      <span class="btn__icon --apple">
+        {% include svg-apple-logo.html %}
+      </span>
+      Download on the App Store
+    </a>
+  </div>
+
+  <!-- Reviews -->
+
+  <div class="three-col container">
+    
+    <div class="three-col__col">
+      <div class="review">
+        <div class="review__stars">
+          {% include svg-stars.html %}
+        </div>
+        <p class="review__text type-p2">
+          A review! This is a real actual one, which includes compliments
+        </p>
+        <p class="review__reviewer type-p3">— Andy M</p>
+      </div>
+    </div>
+
+    <div class="three-col__col">
+      <div class="review">
+        <div class="review__stars">
+          {% include svg-stars.html %}
+        </div>
+        <p class="review__text type-p2">
+          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+        </p>
+        <p class="review__reviewer type-p3">— Andy M</p>
+      </div>
+    </div>
+
+    <div class="three-col__col">
+      <div class="review">
+        <div class="review__stars">
+          {% include svg-stars.html %}
+        </div>
+        <p class="review__text type-p2">
+          Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.
+        </p>
+        <p class="review__reviewer type-p3">— Andy M</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- For Librarians / For Lawyers -->
+
+  <div class="two-col container --margin-top">
+    
+    <div class="two-col__col">
+      <div class="feature --alt">
+        <div class="feature__icon">
+          <img src="/assets/images/librarians.jpg" alt="">
+        </div>
+        <div class="feature__text">
+          <h2 class="type-h2">For Librarians</h2>
+          <p class="type-p1">This will be a tagline enticing librarians to pay particular attention</p>
+          <div class="feature__link">
+            <a href="" class="link">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col__col">
+      <div class="feature --alt">
+        <div class="feature__icon">
+          <img src="/assets/images/lawyers.jpg" alt="">
+        </div>
+        <div class="feature__text">
+          <h2 class="type-h2">For Lawyers</h2>
+          <p class="type-p1">This will be a tagline enticing lawyers to pay particular attention</p>
+          <div class="feature__link">
+            <a href="" class="link">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  {% include site-footer.html %}
+  
+</body>
+
+</html>

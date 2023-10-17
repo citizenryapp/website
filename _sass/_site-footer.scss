@@ -1,0 +1,136 @@
+.site-footer {
+  margin-top: 100px;
+  padding: 80px 0 50px;
+  background-color: var(--c-near-black);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0 25px;
+
+    @include media-md {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__right {
+    flex-direction: column;
+    display: flex;
+    
+    @include media-md {
+      align-items: flex-start;
+      justify-content: flex-end;
+      flex-direction: row;
+    }
+  }
+
+  &__full {
+    flex-direction: column;
+    display: flex;
+    margin-top: 40px;
+    border-top: 1px solid var(--c-dark-grey);
+    
+    @include media-md {
+      grid-column: span 2;
+    }
+  }
+
+  &__logomark {
+    display: inline-block;
+  }
+
+  &__logo {
+    display: inline-block;
+    width: 75%;
+    max-width: 170px;
+    margin-top: 30px;
+
+    svg * {
+      fill: var(--c-white);
+    }
+  }
+
+  &__links {
+    color: var(--c-white);
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    
+    @include media-md {
+      // align-items: flex-end;
+      // justify-content: flex-start;
+      margin-top: 68px;
+    }
+
+    a {
+      text-decoration: underline;
+      transition: text-decoration var(--transition-default);
+
+      &:hover {
+        text-decoration-color: transparent;
+      }
+
+      & + a {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  &__download {
+    margin-top: 25px;
+    display: block;
+
+    @include media-md {
+      margin-top: 68px;
+      margin-left: 80px;
+    }
+  }
+
+  &__tagline {
+    margin-top: 40px;
+    color: var(--c-white);
+
+    @include until-media-md {
+     p {
+      font-size: 21px !important;
+     }
+    }
+
+    a {
+      text-decoration: underline;
+      transition: text-decoration var(--transition-default);
+      font-weight: 600;
+
+      &:hover {
+        text-decoration-color: transparent;
+      }
+    }
+  }
+
+  &__small {
+    color: var(--c-white);
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @include media-md {
+      justify-content: space-between;
+    }
+
+    a {
+      margin-left: 10px;
+      text-decoration: underline;
+      transition: text-decoration var(--transition-default);
+
+      &:hover {
+        text-decoration-color: transparent;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.banner {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 100px 50px;
+  text-align: center;
+  background-color: var(--c-blue);
+  color: var(--c-white);
+  border-radius: 20px;
+
+  .btn {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,65 @@
+// Responsive Mixins
+
+// Breakpoints
+$breakpoint-sm: 400px;
+$breakpoint-md: 750px;
+$breakpoint-lg: 1000px;
+$breakpoint-nav: 1138px;
+$breakpoint-xl: 1400px;
+
+@mixin media-xs() {
+  @media screen and (max-width: $breakpoint-sm - 1) {
+    @content;
+  }
+}
+@mixin media-sm() {
+  @media screen and (min-width: $breakpoint-sm) {
+    @content;
+  }
+}
+@mixin media-md() {
+  @media screen and (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+@mixin media-nav() {
+  @media screen and (min-width: $breakpoint-nav) {
+    @content;
+  }
+}
+@mixin media-lg() {
+  @media screen and (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+@mixin media-xl() {
+  @media screen and (min-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+@mixin until-media-sm() {
+  @media screen and (max-width: $breakpoint-sm - 1) {
+    @content;
+  }
+}
+@mixin until-media-md() {
+  @media screen and (max-width: $breakpoint-md - 1) {
+    @content;
+  }
+}
+@mixin until-media-nav() {
+  @media screen and (max-width: $breakpoint-nav - 1) {
+    @content;
+  }
+}
+@mixin until-media-lg() {
+  @media screen and (max-width: $breakpoint-lg - 1) {
+    @content;
+  }
+}
+@mixin until-media-xl() {
+  @media screen and (max-width: $breakpoint-xl - 1) {
+    @content;
+  }
+}

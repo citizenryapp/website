@@ -1,0 +1,20 @@
+.review {
+  min-height: 100%;
+  background-color: var(--c-light-grey);
+  padding: 25px 20px;
+  border-radius: 10px;
+
+  &__stars {
+    margin-bottom: 15px;
+
+    svg * {
+      fill: var(--c-gold);
+    }
+  }
+
+  &__reviewer {
+    font-weight: 500;
+    margin-top: 5px;
+    color: var(--c-near-black);
+  }
+}

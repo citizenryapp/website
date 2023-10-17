@@ -1,0 +1,9 @@
+.three-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+
+  @include media-md {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

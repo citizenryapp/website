@@ -1,0 +1,24 @@
+.site-header {
+  width: 100%;
+  margin-top: 30px;
+
+  @include media-md {
+    margin-top: 50px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: block;
+    width: 40%;
+    max-width: 150px;
+
+    @include media-md {
+      max-width: 180px;
+    }
+  }
+}

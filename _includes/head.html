@@ -1,0 +1,52 @@
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#181a1c">
+<meta name="msapplication-TileColor" content="#eeece9">
+<meta name="theme-color" content="#ffffff">
+
+
+<script>
+  var root = document.getElementsByTagName('html')[0];
+  root.className += 'js';
+</script>
+
+
+<script>
+  window.addEventListener('touchstart', function() {
+    document.getElementsByTagName('html')[0].classList.add('is-touch');
+    window.isTouch = true;
+  });
+</script>
+
+
+<script>
+  const updateVh = function() {
+    const vh = window.innerHeight;
+    document.documentElement.style.setProperty('--vh100', `${vh}px`);
+  };
+
+  if (typeof window !== 'undefined') {
+    window.addEventListener('resize', updateVh);
+    updateVh();
+  }
+</script>
+
+
+<script>
+  window.lazySizesConfig = {
+    addClasses: true,
+    expand: 1000,
+    lazyClass: 'lazyload',
+    loadingClass: 'is-loading',
+    loadedClass: 'is-loaded',
+    customMedia: {
+      '--small': '(max-width: 768px)'
+    }
+  };
+</script>
+
+<link rel="stylesheet" href="https://use.typekit.net/bkz1hwe.css">
+<link rel="stylesheet" href="assets/css/main.css">
+

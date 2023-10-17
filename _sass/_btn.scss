@@ -1,0 +1,35 @@
+.btn {
+  display: inline-block;
+  background-color: var(--c-red);
+  padding: 16px 36px;
+  font-weight: 600;
+  color: var(--c-white);
+  border-radius: 100px;
+  transition: background var(--transition-default);
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+
+    &.--apple {
+      transform: translateY(-12%);
+    }
+  }
+
+  @media(hover:hover) {
+    &:hover {
+      background-color: var(--c-red-hover);
+    }
+  }
+
+  &.--black {
+    background-color: var(--c-black);
+
+    @media(hover:hover) {
+      &:hover {
+        background-color: #000000;
+      }
+    }
+  }
+}

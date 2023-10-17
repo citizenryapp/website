@@ -1,0 +1,18 @@
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+
+  @include media-md {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &.--margin-top {
+    margin-top: 125px;
+    grid-gap: 100px 25px;
+
+    @include media-md {
+      margin-top: 150px;
+    }
+  }
+}
