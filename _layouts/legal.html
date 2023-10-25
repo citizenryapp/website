@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% include head.html %}
+  <title>Citizenry for iOS · {{ page.title }}</title>
+</head>
+
+<body>
+  {% include site-header.html %}
+  
+  <!-- Header -->
+
+  <div class="header container --narrow">
+
+    <h1 class="type-h1">{{ page.title }}</h1>
+
+  </div>
+
+  <!-- Content -->
+
+  <div class="md-content container --narrow">
+    {{ page.terms|markdownify }}
+  </div>
+
+
+  {% include site-footer.html %}
+  
+</body>
+
+</html>

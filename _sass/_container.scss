@@ -2,4 +2,8 @@
   width: 90%;
   max-width: 1440px;
   margin: auto;
+
+  &.--narrow {
+    max-width: 920px;
+  }
 }

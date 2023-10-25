@@ -1,0 +1,28 @@
+.md-content {
+
+  * {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  p, ul, ol {
+    @extend .type-p1;
+    margin-top: 1em;
+  }
+
+  h1 {
+    @extend .type-h1;
+    margin-top: 2em;
+  }
+
+  h2 {
+    @extend .type-h2;
+    margin-top: 2em;
+  }
+
+  h3 {
+    @extend .type-h3;
+    margin-top: 2em;
+  }
+}

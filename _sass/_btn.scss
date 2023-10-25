@@ -36,4 +36,14 @@
       }
     }
   }
+
+  &.--blue {
+    background-color: var(--c-blue);
+
+    @media(hover:hover) {
+      &:hover {
+        background-color: var(--c-dark-blue);
+      }
+    }
+  }
 }

@@ -1,9 +1,126 @@
 .hero {
-  background-color: var(--c-grey);
-  min-height: 80vh;
   margin-top: 30px;
   border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding-top: 150px;
+
+  &__bg {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 25px;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  &__phone {
+    position: relative;
+    height: auto;
+    width: 75%;
+    aspect-ratio: 1395 / 2834;
+    bottom: 50px;
+    z-index: 1;
+
+    @include media-md {
+      width: 50%;
+    }
+
+    @include media-lg {
+      width: 25%;
+    }
+  }
+
+  &__phone-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+
+  &__phone-pill {
+    position: absolute;
+    top: 3.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28.459%;
+    aspect-ratio: 397 / 115;
+    z-index: 2;
+  }
+
+  &__gallery {
+    z-index: 1;
+    position: absolute;
+    top: 1.7%;
+    left: 4.8%;
+    width: 91%;
+    aspect-ratio: 1264 / 2726;
+    
+    .flickity-viewport {
+      overflow: hidden;
+      border-radius: 10vw;
+
+      @include media-md {
+        border-radius: 6.5vw;
+      }
+
+      @include media-lg {
+        border-radius: 3.1vw;
+      }
+
+      @include media-limit {
+        border-radius: 52px;
+      }
+    }
+
+    @include until-media-md {
+      .flickity-prev-next-button {
+        display: none !important;
+      }
+    }
+
+    .flickity-prev-next-button.previous {
+      left: -33.333%;
+    }
+
+    .flickity-prev-next-button.next {
+      right: -33.333%;
+    }
+
+    .flickity-page-dots {
+      bottom: calc(-2% - 25px);
+
+      .dot {
+        margin: 0 4px;
+      }
+    }
+
+    .flickity-prev-next-button .flickity-button-icon {
+      width: 40%;
+      height: 40%;
+      left: 30%;
+      top: 30%;
+    }
+  }
 }

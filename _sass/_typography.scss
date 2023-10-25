@@ -1,4 +1,15 @@
 .type-h1 {
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  font-weight: 500;
+
+  @include media-md {
+    font-size: 54px;
+  }
+}
+
+.type-h2 {
   font-size: 24px;
   line-height: 1.333;
   letter-spacing: -0.01em;
@@ -8,12 +19,16 @@
     font-weight: 500;
   }
 
+  p + p {
+    margin-top: 1em;
+  }
+
   @include media-md {
     font-size: 36px;
   }
 }
 
-.type-h2 {
+.type-h3 {
   font-size: 18px;
   line-height: 1.333;
   letter-spacing: -0.01em;
