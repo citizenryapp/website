@@ -15,10 +15,10 @@
   &__logo {
     display: block;
     width: 40%;
-    max-width: 150px;
+    max-width: 180px;
 
     @include media-md {
-      max-width: 180px;
+      max-width: 220px;
     }
   }
 }
