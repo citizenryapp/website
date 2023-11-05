@@ -3,8 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: occupations
-title: For Librarians
-heading: Are you a librarian? Citizenry is here to help your community pass the USCIS civics test.
+title: For Educators
+heading: Are you an educator or librarian? Citizenry is here to help your community pass the USCIS civics test.
 intro: |
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
 
