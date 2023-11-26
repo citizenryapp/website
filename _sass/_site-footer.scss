@@ -48,14 +48,14 @@
     display: inline-block;
     width: 75%;
 
+    img * {
+      max-width: 70px;
+    }
+
     svg * {
       fill: var(--c-white);
       max-width: 170px;
       margin-top: 30px;
-    }
-
-    img * {
-      max-width: 70px;
     }
   }
 
