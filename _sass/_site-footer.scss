@@ -40,17 +40,14 @@
     }
   }
 
-  &__logomark {
+  &__logoimage {
     display: inline-block;
+    max-width: 70px;
   }
 
   &__logo {
     display: inline-block;
     width: 75%;
-
-    img * {
-      max-width: 70px;
-    }
 
     svg * {
       fill: var(--c-white);
